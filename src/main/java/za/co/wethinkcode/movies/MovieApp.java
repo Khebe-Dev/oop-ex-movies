@@ -14,6 +14,8 @@ public class MovieApp {
                 director,
                 Duration.ofMinutes(143)
         );
+//        skyfall.asFormattedString();
+
 
 
     }
