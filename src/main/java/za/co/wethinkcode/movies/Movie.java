@@ -11,10 +11,10 @@ public class Movie {
     private final Duration runtime;
 
     public Movie(String title, String synopsis, LocalDate releaseDate, Person director, Duration runtime) {
-        if (title == null || title.isEmpty()) throw new IllegalArgumentException("Title cannot be null or empty");
-        if (releaseDate == null) throw new IllegalArgumentException("Release date cannot be null");
-        if (director == null) throw new IllegalArgumentException("Director cannot be null");
-        if (runtime == null) throw new IllegalArgumentException("Runtime cannot be null");
+//        if (title == null || title.isEmpty()) throw new IllegalArgumentException("Title cannot be null or empty");
+//        if (releaseDate == null) throw new IllegalArgumentException("Release date cannot be null");
+//        if (director == null) throw new IllegalArgumentException("Director cannot be null");
+//        if (runtime == null) throw new IllegalArgumentException("Runtime cannot be null");
 
         this.title = title;
         this.synopsis = (synopsis == null) ? "" : synopsis;
@@ -47,19 +47,19 @@ public class Movie {
         this.synopsis = (synopsis == null) ? "" : synopsis;
     }
 
-    public void setReleaseDate(LocalDate newReleaseDate) {
-        if (newReleaseDate == null) throw new IllegalArgumentException("Release date cannot be null");
-        if (newReleaseDate.isAfter(LocalDate.now())) {
-            this.releaseDate = newReleaseDate;
-        }
-    }
-
-    public void setDirector(Person newDirector) {
-        if (newDirector == null) throw new IllegalArgumentException("Director cannot be null");
-        if (this.releaseDate.isAfter(LocalDate.now())) {
-            this.director = newDirector;
-        }
-    }
+//    public void setReleaseDate(LocalDate newReleaseDate) {
+//        if (newReleaseDate == null) throw new IllegalArgumentException("Release date cannot be null");
+//        if (newReleaseDate.isAfter(LocalDate.now())) {
+//            this.releaseDate = newReleaseDate;
+//        }
+//    }
+//
+//    public void setDirector(Person newDirector) {
+//        if (newDirector == null) throw new IllegalArgumentException("Director cannot be null");
+//        if (this.releaseDate.isAfter(LocalDate.now())) {
+//            this.director = newDirector;
+//        }
+//    }
 
 //    public void asFormattedString() {
 //        System.out.println("Title: " + title + "\n"
