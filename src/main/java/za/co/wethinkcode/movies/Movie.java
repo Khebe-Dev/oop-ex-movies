@@ -61,11 +61,11 @@ public class Movie {
         }
     }
 
-    public String asFormattedString() {
-        return "Title: " + title + "\n"
+    public void asFormattedString() {
+        System.out.println("Title: " + title + "\n"
                 + "Synopsis: " + synopsis + "\n"
                 + "Release Date: " + releaseDate + "\n"
                 + "Director: " + director.name() + "\n"
-                + "Runtime: " + runtime.toMinutes() + " minutes";
+                + "Runtime: " + runtime.toMinutes() + " minutes");
     }
 }

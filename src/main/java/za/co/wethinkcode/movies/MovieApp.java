@@ -15,6 +15,6 @@ public class MovieApp {
                 Duration.ofMinutes(143)
         );
 
-        System.out.println(skyfall.asFormattedString());
+
     }
 }
